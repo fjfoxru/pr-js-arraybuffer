@@ -1,6 +1,6 @@
-import Math from './math';
+import MathGame from './MathGame';
 
-export default class Daemon extends Math {
+export default class Daemon extends MathGame {
     constructor() {
         super(200)
     }
