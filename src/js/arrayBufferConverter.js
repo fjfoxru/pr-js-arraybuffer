@@ -1,6 +1,3 @@
-import encoding from 'text-encoding';
-
-
 export default class ArrayBufferConverter {
     constructor() {
         this.buffer = '';
@@ -11,7 +8,7 @@ export default class ArrayBufferConverter {
     }
 
     toString() {
-        const decoder = new encoding.TextDecoder();
+        const decoder = new TextDecoder();
         return decoder.decode(this.buffer);
     }
 
